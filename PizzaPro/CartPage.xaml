@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PizzaPro.CartPage"
+             Title="Корзина">
+    <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <Label 
+            Text="Сумма покупки"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+            <Label x:Name="PriceLabel" Text="0" VerticalOptions="End"/>
+            <Label Text="₽"/>
+        </HorizontalStackLayout>
+        <Label 
+            Text="Пока что в корзине пусто. Добавьте пиццу на основной странице)"
+            FontSize="38"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

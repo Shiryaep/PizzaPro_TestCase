@@ -18,9 +18,9 @@
             </Grid.RowDefinitions>
 
             <Button WidthRequest="370" Margin="5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
-                x:Name="CounterBtn9"
+                x:Name="GoToCartBtn"
                 Text="Перейти в корзину" FontAttributes="Bold"
-                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                Clicked="OnGoToCartBtnClicked" BackgroundColor="#FF6800"
                 HorizontalOptions="Center"/>
 
             <BoxView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
@@ -63,9 +63,9 @@
                 Text="Мортаделла, соус песто, моцарелла, кубики брынзы и фирменный томатный соус"                
                 HorizontalOptions="Center" />
                 <Button Margin="5"
-                x:Name="CounterBtn"
+                x:Name="Pizza1Btn"
                 Text="В корзину за 519 ₽" FontAttributes="Bold"
-                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF6800"
                 HorizontalOptions="Center"/>
             </VerticalStackLayout>
 
@@ -78,9 +78,9 @@
                 Text="Соберите свою пиццу 35 см с двумя разными вкусами"                
                 HorizontalOptions="Center" />
                 <Button Margin="5"
-                x:Name="CounterBtn1"
+                x:Name="Pizza2Btn"
                 Text="В корзину за 320 ₽" FontAttributes="Bold"
-                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF6800"
                 HorizontalOptions="Center"/>
             </VerticalStackLayout>
 
@@ -93,9 +93,9 @@
                 Text="Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо"                
                 HorizontalOptions="Center" />
                 <Button Margin="5"
-                x:Name="CounterBtn2"
+                x:Name="Pizza3Btn"
                 Text="В корзину за 289 ₽" FontAttributes="Bold"
-                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF6800"
                 HorizontalOptions="Center"/>
             </VerticalStackLayout>
 
@@ -108,9 +108,9 @@
                 Text="Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус"                
                 HorizontalOptions="Center" />
                 <Button Margin="5"
-                x:Name="CounterBtn3"
+                x:Name="Pizza4Btn"
                 Text="В корзину за 289 ₽" FontAttributes="Bold"
-                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF6800"
                 HorizontalOptions="Center"/>
             </VerticalStackLayout>
 

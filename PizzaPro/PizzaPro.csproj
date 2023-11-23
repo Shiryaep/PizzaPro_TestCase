@@ -44,7 +44,6 @@
 		<MauiImage Update="Resources\Images\pizza_02pic.svg" BaseSize="200,200" />
 		<MauiImage Update="Resources\Images\pizza_03pic.svg" BaseSize="200,200" />
 		<MauiImage Update="Resources\Images\pizza_04pic.svg" BaseSize="200,200" />
-		<MauiImage Update="Resources\Splash\splash.svg" BaseSize="200,200" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -55,6 +54,15 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="CartPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="EmptyCartPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

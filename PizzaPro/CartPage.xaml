@@ -3,20 +3,96 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PizzaPro.CartPage"
              Title="Корзина">
-    <VerticalStackLayout>
-        <HorizontalStackLayout>
-            <Label 
+
+    <Grid Margin="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Label Padding="10,0,100,0" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"
             Text="Сумма покупки"
             FontSize="20"
             VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-            <Label x:Name="PriceLabel" Text="0" VerticalOptions="End"/>
-            <Label Text="₽"/>
-        </HorizontalStackLayout>
-        <Label 
-            Text="Пока что в корзине пусто. Добавьте пиццу на основной странице)"
-            FontSize="38"
-            VerticalOptions="Center" 
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+        <HorizontalStackLayout Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="0" Padding="5">
+            <Label FontSize="20" x:Name="PriceLabel" Text="0" HorizontalOptions="Fill" VerticalOptions="Center" />
+            <Label FontSize="20" Text="₽" HorizontalOptions="Fill" VerticalOptions="Center" />
+        </HorizontalStackLayout>
+
+
+
+        <Label Padding="5,0,20,0" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1"
+            Text="Мортаделла с песто за 519₽"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <HorizontalStackLayout Grid.Column="4" Grid.Row="1" VerticalOptions="Center">
+            <Label FontSize="20" x:Name="Pizza1CountLabel" Text="0"/>
+            <Label FontSize="20" Text=" шт."/>
+        </HorizontalStackLayout>
+
+
+        <Label Padding="5,0,20,0" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3"
+            Text="Пицца из половинок за 320₽"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <HorizontalStackLayout Grid.Column="4" Grid.Row="3" VerticalOptions="Center">
+            <Label FontSize="20" x:Name="Pizza2CountLabel" Text="0"/>
+            <Label FontSize="20" Text=" шт."/>
+        </HorizontalStackLayout>
+
+
+        <Label Padding="5,0,20,0" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5"
+            Text="Сырная за 289₽"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <HorizontalStackLayout Grid.Column="4" Grid.Row="5" VerticalOptions="Center">
+            <Label FontSize="20" x:Name="Pizza3CountLabel" Text="0"/>
+            <Label FontSize="20" Text=" шт."/>
+        </HorizontalStackLayout>
+
+
+        <Label Padding="5,0,20,0" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="7"
+            Text="Пепперони фреш за 289₽"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <HorizontalStackLayout Grid.Column="4" Grid.Row="7" VerticalOptions="Center">
+            <Label FontSize="20" x:Name="Pizza4CountLabel" Text="0"/>
+            <Label FontSize="20" Text=" шт."/>
+        </HorizontalStackLayout>
+
+        <Button Text=" - " x:Name="Pizza1MinusBtn" Clicked="PizzaOperationBtnClicked" HorizontalOptions="Fill" Grid.Column="3" Grid.Row="2"/>
+        <Button Text=" + " x:Name="Pizza1PlusBtn" Clicked="PizzaOperationBtnClicked" HorizontalOptions="Fill" Grid.Column="4" Grid.Row="2"/>
+
+        <Button Text=" - " x:Name="Pizza2MinusBtn" Clicked="PizzaOperationBtnClicked" HorizontalOptions="Fill" Grid.Column="3" Grid.Row="4"/>
+        <Button Text=" + " x:Name="Pizza2PlusBtn" Clicked="PizzaOperationBtnClicked" HorizontalOptions="Fill" Grid.Column="4" Grid.Row="4"/>
+
+        <Button Text=" - " x:Name="Pizza3MinusBtn" Clicked="PizzaOperationBtnClicked" HorizontalOptions="Fill" Grid.Column="3" Grid.Row="6"/>
+        <Button Text=" + " x:Name="Pizza3PlusBtn" Clicked="PizzaOperationBtnClicked" HorizontalOptions="Fill" Grid.Column="4" Grid.Row="6"/>
+
+        <Button Text=" - " x:Name="Pizza4MinusBtn" Clicked="PizzaOperationBtnClicked" HorizontalOptions="Fill" Grid.Column="3" Grid.Row="8"/>
+        <Button Text=" + " x:Name="Pizza4PlusBtn" Clicked="PizzaOperationBtnClicked" HorizontalOptions="Fill" Grid.Column="4" Grid.Row="8"/>
+
+
+
+
+    </Grid>
 </ContentPage>

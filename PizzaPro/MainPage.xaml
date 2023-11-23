@@ -17,11 +17,11 @@
                 <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
 
-            <Button WidthRequest="370" Margin="5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
-                x:Name="GoToCartBtn"
+            <Button Margin="5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
+                x:Name="GoToCartBtn" FontSize="30"
                 Text="Перейти в корзину" FontAttributes="Bold"
-                Clicked="OnGoToCartBtnClicked" BackgroundColor="#FF6800"
-                HorizontalOptions="Center"/>
+                Clicked="OnGoToCartBtnClicked" BackgroundColor="#FF7C21"
+                HorizontalOptions="Fill"/>
 
             <BoxView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
                 Color="#F0D77D" CornerRadius="10" Margin="2"
@@ -65,7 +65,7 @@
                 <Button Margin="5"
                 x:Name="Pizza1Btn"
                 Text="В корзину за 519 ₽" FontAttributes="Bold"
-                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF6800"
+                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF7C21"
                 HorizontalOptions="Center"/>
             </VerticalStackLayout>
 
@@ -80,7 +80,7 @@
                 <Button Margin="5"
                 x:Name="Pizza2Btn"
                 Text="В корзину за 320 ₽" FontAttributes="Bold"
-                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF6800"
+                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF7C21"
                 HorizontalOptions="Center"/>
             </VerticalStackLayout>
 
@@ -95,7 +95,7 @@
                 <Button Margin="5"
                 x:Name="Pizza3Btn"
                 Text="В корзину за 289 ₽" FontAttributes="Bold"
-                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF6800"
+                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF7C21"
                 HorizontalOptions="Center"/>
             </VerticalStackLayout>
 
@@ -110,7 +110,7 @@
                 <Button Margin="5"
                 x:Name="Pizza4Btn"
                 Text="В корзину за 289 ₽" FontAttributes="Bold"
-                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF6800"
+                Clicked="OnPizzaBtnClicked" BackgroundColor="#FF7C21"
                 HorizontalOptions="Center"/>
             </VerticalStackLayout>
 

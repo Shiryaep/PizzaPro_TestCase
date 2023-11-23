@@ -48,8 +48,13 @@ namespace PizzaPro
         public void ChangeCount(int NumOfPizza, int Value)
         { 
             var tmp = pizzaDataList[NumOfPizza - 1];
-            tmp.Price += Value;
+            tmp.Count += Value;
             pizzaDataList[NumOfPizza - 1] = tmp;
+        }
+
+        public int GetCount(int NumOfPizza) 
+        {
+            return pizzaDataList[NumOfPizza - 1].Count;
         }
 
         public int GetSumOfPurchase()

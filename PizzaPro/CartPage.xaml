@@ -4,6 +4,13 @@
              x:Class="PizzaPro.CartPage"
              Title="Корзина">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="yellowBack">#FFF292</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    
     <Grid Margin="2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -14,15 +21,32 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
+
+        <BoxView Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+        <BoxView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="2"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+        <BoxView Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="2"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+        <BoxView Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="5" Grid.RowSpan="2"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+        <BoxView Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="5" Grid.RowSpan="2"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+        
 
         <Label Padding="10,0,100,0" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"
             Text="Сумма покупки"

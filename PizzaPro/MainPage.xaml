@@ -2,7 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PizzaPro.MainPage">
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="yellowBack">#FFF292</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ScrollView>
         <Grid Margin="2">
             <Grid.ColumnDefinitions>
@@ -11,10 +16,10 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
-                <RowDefinition Height="300"/>
-                <RowDefinition Height="300"/>
-                <RowDefinition Height="300"/>
-                <RowDefinition Height="300"/>
+                <RowDefinition Height="350"/>
+                <RowDefinition Height="350"/>
+                <RowDefinition Height="350"/>
+                <RowDefinition Height="350"/>
             </Grid.RowDefinitions>
 
             <Button Margin="5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
@@ -24,16 +29,16 @@
                 HorizontalOptions="Fill"/>
 
             <BoxView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
-                Color="#F0D77D" CornerRadius="10" Margin="2"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
                  HorizontalOptions="Center" VerticalOptions="Center" />
             <BoxView Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"
-                Color="#F0D77D" CornerRadius="10" Margin="2"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
                  HorizontalOptions="Center" VerticalOptions="Center" />
             <BoxView Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"
-                Color="#F0D77D" CornerRadius="10" Margin="2"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
                  HorizontalOptions="Center" VerticalOptions="Center" />
             <BoxView Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"
-                Color="#F0D77D" CornerRadius="10" Margin="2"
+                Color="{StaticResource Key=yellowBack}" CornerRadius="10" Margin="2"
                  HorizontalOptions="Center" VerticalOptions="Center" />
             
 

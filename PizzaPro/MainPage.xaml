@@ -4,139 +4,118 @@
              x:Class="PizzaPro.MainPage">
 
     <ScrollView>
-        <Grid>
+        <Grid Margin="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
 
+            <Button WidthRequest="370" Margin="5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"
+                x:Name="CounterBtn9"
+                Text="Перейти в корзину" FontAttributes="Bold"
+                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                HorizontalOptions="Center"/>
 
-            <VerticalStackLayout Grid.Column="0" Grid.Row="0"
+            <BoxView Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
+                Color="#F0D77D" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+            <BoxView Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"
+                Color="#F0D77D" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+            <BoxView Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"
+                Color="#F0D77D" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+            <BoxView Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"
+                Color="#F0D77D" CornerRadius="10" Margin="2"
+                 HorizontalOptions="Center" VerticalOptions="Center" />
+            
+
+            <Image Grid.Column="0" Grid.Row="1"
+                Source="pizza_01pic.png" HeightRequest="150"
+                HorizontalOptions="Center" />
+
+            <Image Grid.Column="0" Grid.Row="2"
+                Source="pizza_02pic.png" HeightRequest="150"
+                HorizontalOptions="Center" />
+
+            <Image Grid.Column="0" Grid.Row="3"
+                Source="pizza_03pic.png" HeightRequest="150"
+                HorizontalOptions="Center" />
+
+            <Image Grid.Column="0" Grid.Row="4"
+                Source="pizza_04pic.png" HeightRequest="150"
+                HorizontalOptions="Center" />
+
+
+            <VerticalStackLayout Grid.Column="1" Grid.Row="1" Margin="3"
             VerticalOptions="Center">
-
-                <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
+                <Label Margin="3" FontSize="30" FontAttributes="Bold"
+                Text="Мортаделла с песто"                
                 HorizontalOptions="Center" />
-
-                <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                <Label Margin="3" FontSize="16"
+                Text="Мортаделла, соус песто, моцарелла, кубики брынзы и фирменный томатный соус"                
                 HorizontalOptions="Center" />
-
-                <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-                <Button
-                x:Name="CounterBtn3"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-            </VerticalStackLayout>
-
-
-            <VerticalStackLayout Grid.Column="1" Grid.Row="0"
-            VerticalOptions="Center">
-
-                <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-                <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-                <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-                <Button
-                x:Name="CounterBtn2"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-            </VerticalStackLayout>
-
-
-            <VerticalStackLayout Grid.Column="0" Grid.Row="1"
-            VerticalOptions="Center">
-
-                <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-                <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-                <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-                <Button
+                <Button Margin="5"
                 x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                Text="В корзину за 519 ₽" FontAttributes="Bold"
+                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                HorizontalOptions="Center"/>
             </VerticalStackLayout>
 
-
-            <VerticalStackLayout Grid.Column="1" Grid.Row="1"
+            <VerticalStackLayout Grid.Column="1" Grid.Row="2" Margin="3"
             VerticalOptions="Center">
-
-                <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
+                <Label Margin="3" FontSize="30" FontAttributes="Bold"
+                Text="Пицца из половинок"                
                 HorizontalOptions="Center" />
-
-                <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                <Label Margin="3" FontSize="16"
+                Text="Соберите свою пиццу 35 см с двумя разными вкусами"                
                 HorizontalOptions="Center" />
-
-                <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-                <Button
+                <Button Margin="5"
                 x:Name="CounterBtn1"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                Text="В корзину за 320 ₽" FontAttributes="Bold"
+                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                HorizontalOptions="Center"/>
             </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1" Grid.Row="3" Margin="3"
+            VerticalOptions="Center">
+                <Label Margin="3" FontSize="30" FontAttributes="Bold"
+                Text="Сырная 🌱👶"                
+                HorizontalOptions="Center" />
+                <Label Margin="3" FontSize="16"
+                Text="Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо"                
+                HorizontalOptions="Center" />
+                <Button Margin="5"
+                x:Name="CounterBtn2"
+                Text="В корзину за 289 ₽" FontAttributes="Bold"
+                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1" Grid.Row="4" Margin="3"
+            VerticalOptions="Center">
+                <Label Margin="3" FontSize="30" FontAttributes="Bold"
+                Text="Пепперони фреш"
+                HorizontalOptions="Center" />
+                <Label Margin="3" FontSize="16"
+                Text="Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус"                
+                HorizontalOptions="Center" />
+                <Button Margin="5"
+                x:Name="CounterBtn3"
+                Text="В корзину за 289 ₽" FontAttributes="Bold"
+                Clicked="OnCounterClicked" BackgroundColor="#FF6800"
+                HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+
+
         </Grid>
         
     </ScrollView>

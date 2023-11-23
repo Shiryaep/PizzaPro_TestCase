@@ -49,6 +49,7 @@ namespace PizzaPro
         { 
             var tmp = pizzaDataList[NumOfPizza - 1];
             tmp.Count += Value;
+            if (tmp.Count < 0) { tmp.Count = 0; }
             pizzaDataList[NumOfPizza - 1] = tmp;
         }
 
